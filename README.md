@@ -20,7 +20,7 @@ Please push your code often and use descriptive commit messages, this helps you 
 
 ## Project Description
 
-In this project, you will **write tests** for an existing React application that queries data from the Star Wars API, and renders a list of Star Wars characters
+In this project, you will **write tests** for an existing React application that queries data from the Star Wars API, and renders a list of Star Wars characters. The app also has buttons called `Next` and `Previous` to query the API again for the next or previous data sets. You will need to write tests for those buttons to ensure that they are working as expected.
 
 ## Project Set Up
 
