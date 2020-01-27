@@ -1,0 +1,30 @@
+button {
+  padding: 8px 12px;
+  background-color: transparent;
+  color: #ffc402;
+  border: 1px solid #ffc402;
+  border-radius: 4px;
+  font-size: 24px;
+}
+
+button:hover {
+  background-color: #ffc402;
+  color: #282c34;
+  border: 1px solid #282c34;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+.buttons {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 32px;
+}
