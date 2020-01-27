@@ -39,6 +39,10 @@ Follow these steps for completing your project.
 - [ ] Use GitHub's website to add your project manager as a reviewer on the pull-request.
 - [ ] Your project manager will count the project as complete by merging the branch back into the master branch of your forked repository.
 
+## Note
+
+The React app here was created with the latest version of `create-react-app` which now comes with `@testing-library/react` already included. When you create your own apps with the new CRA version, you won't need to add that library anymore!
+
 ## Minimum Viable Product
 
 Your job is to write tests to ensure that the application behaves as expected.
