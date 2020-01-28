@@ -1,7 +1,8 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import StarWarsCharacters from './components/StarWarsCharacters';
 
-test('renders the StarWarsCharacter component', () => {
-  const component = render(<StarWarsCharacters />)
+import { render, fireEvent } from '@testing-library/react';
+import { App } from './App';
+
+test('renders app', async () => {
+  const app = render(<App />);
 })

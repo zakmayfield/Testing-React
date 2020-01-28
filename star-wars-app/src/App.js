@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import StarWarsCharacters from "./components/StarWarsCharacters";
 
-function App() {
+export const App = () => {
   return (
     <div className="App">
       <header className="App-header">

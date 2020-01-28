@@ -10,10 +10,13 @@ export default function StarWarsCharacters() {
   const [next, setNext] = useState();
   const [isLoading, setIsLoading] = useState(false);
   const [characters, setCharacters] = useState([]);
+
   useEffect(() => {
     setIsLoading(true);
+
     const getCharacters = async () => {
       const characters = await getData(url);
+      //.then()
       console.log(characters);
       setNext(characters.next);
       setPrevious(characters.previous);
@@ -22,6 +25,7 @@ export default function StarWarsCharacters() {
     };
     getCharacters();
   }, [url]);
+
 
   const goToNext = e => {
     e.preventDefault();
@@ -32,6 +36,7 @@ export default function StarWarsCharacters() {
     e.preventDefault();
     setUrl(previous);
   };
+
 
   return (
     <div>
@@ -51,10 +56,10 @@ export default function StarWarsCharacters() {
         </>
       )}
       <div className="buttons">
-        <button onClick={goToPrevious} disabled={!previous}>
+        <button data-testid="prevBtn" onClick={goToPrevious} disabled={!previous}>
           Previous
         </button>
-        <button onClick={goToNext} disabled={!next}>
+        <button data-testid="nextBtn" onClick={goToNext} disabled={!next}>
           Next
         </button>
       </div>
